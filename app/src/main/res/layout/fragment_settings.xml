@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nav_fragments.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/profileEmail"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/profileName"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/profileEmail"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_corner_curve"
+        app:behavior_hideable="true"
+        app:layout_behavior="loc">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_200" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/full_name_for_certificate"
+            app:endIconContentDescription="@string/full_name_for_certificate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F6F4F4"
+                android:inputType="textPersonName"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPhoneField"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameField"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+
+            android:layout_marginEnd="16dp"
+            android:hint="@string/phone"
+            app:endIconContentDescription="@string/full_name_for_certificate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F6F4F4"
+                android:inputType="phone"
+                android:maxLength="10"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtBranchField"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameField"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/branch"
+            app:endIconContentDescription="@string/branch">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F6F4F4"
+                android:inputType="textPersonName"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtClgField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPhoneField"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/college_name"
+            app:endIconContentDescription="@string/college_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editClg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F6F4F4"
+                android:inputType="textPersonName"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtOrgField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtClgField"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:enabled="false"
+            android:visibility="gone"
+            android:hint="@string/organizer"
+            app:endIconContentDescription="@string/college_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F6F4F4"
+                android:inputType="textPersonName"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/dashboard_background"
+            android:enabled="false"
+            android:text="@string/update_profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+</RelativeLayout>

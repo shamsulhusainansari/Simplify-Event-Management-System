@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_layout"
+    app:layout_behavior="loc"
+    app:behavior_hideable="true"
+    android:background="@drawable/white_corner_curve"
+    android:layout_height="350dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/publisherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="@string/cortex_shamsul_president"
+        android:textColor="@color/purple_200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_this_event"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:id="@+id/about"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/publisherName"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/longDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/poem"
+        android:textColor="@color/purple_700" />
+
+    <TextView
+        android:id="@+id/payLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longDesc"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/purple_200" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payLink"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dashboard_background"
+        android:text="@string/participate"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payLink"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>

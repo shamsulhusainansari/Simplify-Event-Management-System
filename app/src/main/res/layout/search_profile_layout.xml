@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/search_bar"
+    android:layout_marginTop="6dp"
+    android:gravity="center_vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_height="80dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/searchProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchName"
+        android:layout_toEndOf="@id/searchProfile"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:layout_marginStart="6dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/searchEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchName"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/searchProfile"
+        android:text="@string/prompt_email" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBranch"
+        android:text="@string/branch"
+        android:layout_below="@id/searchEmail"
+        android:layout_toEndOf="@id/searchProfile"
+        android:layout_marginStart="6dp"/>
+</RelativeLayout>

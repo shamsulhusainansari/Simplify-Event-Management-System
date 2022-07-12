@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical"
+    android:id="@+id/mini_relative"
+    android:backgroundTint="@color/purple_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search_bar"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/more_cast_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/miniProfilePic"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/person" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_toEndOf="@id/miniProfilePic"
+                    android:layout_marginStart="6dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:id="@+id/mini_name"
+                    android:textColor="@color/purple_700"/>
+
+                <TextView
+                    android:id="@+id/mini_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mini_name"
+                    android:layout_marginStart="6dp"
+                    android:maxLength="33"
+                    android:layout_toEndOf="@id/miniProfilePic"
+                    android:text="@string/app_name"
+                    android:textColor="@color/purple_200" />
+            </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/my_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:text="@string/my_events"
+            android:textColor="@color/purple_700"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textAlignment="textStart"
+            app:icon="@drawable/ic_baseline_event_24"
+            app:iconPadding="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/leaderBoard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:text="@string/leaderboard"
+            android:textColor="@color/purple_700"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            app:icon="@drawable/ic_baseline_emoji_events_24"
+            app:iconPadding="8dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:text="@string/share"
+            android:textAlignment="textStart"
+            android:textColor="@color/purple_700"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_share"
+
+            app:iconPadding="8dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:textAlignment="textStart"
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:text="@string/app_info"
+            android:textColor="@color/purple_700"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_info_24"
+            app:iconPadding="8dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/or"
+                android:layout_toEndOf="@id/privacy"
+                android:text="  |  "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/terms"
+                android:layout_toEndOf="@id/or"
+                android:text="@string/terms_of_service"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.knoxtech.simplify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Simplify">
+        <activity
+            android:name=".settings.LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.MyEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="simplify56.page.link"
+                    android:scheme="http" />
+                <data
+                    android:host="simplify56.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_inapp_messaging_auto_data_collection_enabled"
+            android:value="true" />
+
+    </application>
+
+</manifest>

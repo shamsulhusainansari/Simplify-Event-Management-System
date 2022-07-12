@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".nav_fragments.SearchFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEventDescField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:startIconDrawable="@drawable/search_black_24"
+        app:startIconContentDescription="@string/search"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/enter_email_address"
+        app:endIconContentDescription="@string/enter_email_address">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textEmailAddress"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/searchRecycler"
+        android:layout_marginEnd="16dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

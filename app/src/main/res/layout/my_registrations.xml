@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:padding="16dp"
+    android:elevation="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/search_bar"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/reg_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_name"
+        android:layout_marginTop="6dp"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/reg_organizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toEndOf="@id/reg_event_name"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reg_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_event_name"
+        android:layout_marginTop="6dp"
+        android:text="@string/app_name" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/w_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/whatsapp_group_link"
+        android:src="@drawable/ic_baseline_group_add_24"
+        tools:ignore="ImageContrastCheck,RelativeOverlap" />
+</RelativeLayout>

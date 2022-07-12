@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/search_bar"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/src_profile"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="6dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:id="@+id/leaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/src_profile"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leaderBranch"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/dashboard_background"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="4dp"
+        android:id="@+id/leaderClg"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/purple_200"
+        android:layout_below="@id/leaderName"
+        android:layout_toEndOf="@id/src_profile"/>
+
+    <TextView
+        android:id="@+id/organizerLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderClg"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toEndOf="@id/src_profile"
+        android:text="@string/app_name"
+        android:textColor="@color/black" />
+</RelativeLayout>

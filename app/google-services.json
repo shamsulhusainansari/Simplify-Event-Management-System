@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "927151043649",
+    "project_id": "simplify-b9f88",
+    "storage_bucket": "simplify-b9f88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927151043649:android:796507694736cad65142c0",
+        "android_client_info": {
+          "package_name": "com.knoxtech.simplify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927151043649-942iu7fkl8p79aa39iuhfabdoqfsb6f6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knoxtech.simplify",
+            "certificate_hash": "b651db911131379464b6689e6d5c692a50979ac0"
+          }
+        },
+        {
+          "client_id": "927151043649-a8ljjecpj34097mgulmbnm9g1rtonqoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRH0_uoaOKWHtDjadOsM7a8AgW-Iiwaoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927151043649-a8ljjecpj34097mgulmbnm9g1rtonqoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nav_fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcome2"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginStart="16dp"
+        android:maxLength="24"
+        android:text="@string/home_simplify"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/person"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_overlay="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" />
+
+
+</RelativeLayout>

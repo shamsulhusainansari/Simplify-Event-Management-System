@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Simplify</string>
+    <string name="find_events_and_schedule_planning">Find events &amp; \nSchedule Planning</string>
+    <string name="main_description">A goal without a plan is just a wish</string>
+    <string name="get_started">Get Started</string>
+    <string name="title_activity_welcome_screen">WelcomeScreen</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="simplify_makes_things_easy">Simplify - Makes things easier</string>
+    <string name="welcome2">Welcome</string>
+    <string name="home_simplify">Home, Simplify</string>
+    <string name="banner">Banner</string>
+    <string name="_30_likes">#30 Likes</string>
+    <string name="backbutton">backButton</string>
+    <string name="cortex_shamsul_president">Cortex, Shamsul-President</string>
+    <string name="about_this_event">About This Event</string>
+    <string name="poem">Iron Man is a superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. <br> https://en.wikipedia.org/wiki/Iron_Man</br></string>
+    <string name="participate">Participate Now</string>
+    <string name="home">Home</string>
+    <string name="my_registrations">Registration</string>
+    <string name="search">Search</string>
+    <string name="setting">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="full_name_for_certificate">Full Name (For Certificate)</string>
+    <string name="phone">Phone</string>
+    <string name="branch">Branch/Semester</string>
+    <string name="update_profile">Update</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="event_name">Event Name</string>
+    <string name="organizer">Organizer</string>
+    <string name="whatsapp_group_link">Event/Group Link</string>
+    <string name="select_banner_jpg_png_only"><![CDATA[Select Poster (JPG & PNG Only)]]></string>
+    <string name="post_event">Post Event</string>
+    <string name="event_description_use_html_tags_to_bold_div_content">Description(use html tags to bold div content)</string>
+    <string name="participation">My Registrations</string>
+    <string name="college_name">College Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_role">Change Role</string>
+    <string name="select_role">Select Role</string>
+
+
+    <string name="ass_role">AutoCompleteTextView Example</string>
+    <string name="my_events">My Events</string>
+    <string name="log_out">Log Out</string>
+    <string name="share">Share</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="or">"|"</string>
+    <string name="app_info">App info</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="enter_event_name">Enter Event Name</string>
+    <string name="choose">Choose Certificate (Click Here)</string>
+    <string name="selected">SELECTED</string>
+    <string name="by_continuing_you_agree_the_simply_s">By continuing, you agree the Simply\'s</string>
+    <string name="term_of_service">Term of Service</string>
+    <string name="and">and</string>
+    <string name="free">Free</string>
+    <string name="paid">Paid</string>
+    <string name="showimage">showImage</string>
+    <string name="payment_link">Entry Fees</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="payment_id">\"Payment ID: \"</string>
+
+    <string-array name="roles">
+        <item>President</item>
+        <item>Vice President</item>
+        <item>Event Coordinator</item>
+        <item>Coordinator</item>
+    </string-array>
+
+    <string-array name="winners">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

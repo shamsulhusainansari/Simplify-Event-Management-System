@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    app:behavior_hideable="false"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:background="@drawable/white_corner_curve"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/purple_200"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/dealerGrp">
+        <RadioButton
+            android:id="@+id/dealerGrp"
+            android:checked="true"
+            android:layout_marginEnd="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/free" />
+
+        <RadioButton
+            android:id="@+id/ansPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/paid"
+            android:textColor="#1B5E20"
+            tools:ignore="TextContrastCheck" />
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEventNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/event_name"
+        app:endIconContentDescription="@string/full_name_for_certificate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textPersonName"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtOrganizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_below="@id/txtEventNameField"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/organizer"
+        app:endIconContentDescription="@string/full_name_for_certificate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editOrganizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textPersonName"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtWhatsappGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrganizer"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/whatsapp_group_link"
+        app:endIconContentDescription="@string/full_name_for_certificate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editWhatsappGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textPersonName"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWhatsappGroup"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/payment_link"
+        android:visibility="gone"
+        app:endIconContentDescription="@string/full_name_for_certificate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPaymentLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textPersonName"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPayment"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/select_banner_jpg_png_only"
+        android:textColor="@color/purple_700" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEventDescField"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/poster"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/event_description_use_html_tags_to_bold_div_content"
+        app:endIconContentDescription="@string/full_name_for_certificate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPosterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#F6F4F4"
+            android:inputType="textLongMessage"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/publishEvent"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEventDescField"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/post_event"
+        android:text="@string/post_event"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/txtEventDescField"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
