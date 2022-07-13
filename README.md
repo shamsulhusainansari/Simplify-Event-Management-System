@@ -49,7 +49,7 @@ are not getting their certificates.
 # Watch Our Promo
 <a href="https://youtu.be/lt_Xe5WuneY" title="Preview">
   <p align="left">
-    <img width="20%" src="https://github.com/shamsulhusainansari/Simplify-Event-Management-System/blob/main/Screenshots/youtube-logo-png-3565.png" alt="Preview"/>
+    <img width="15%" src="https://github.com/shamsulhusainansari/Simplify-Event-Management-System/blob/main/Screenshots/youtube-logo-png-3565.png" alt="Preview"/>
   </p>
 </a>
 
