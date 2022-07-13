@@ -43,3 +43,9 @@ are not getting their certificates.
 # Currently available on the Play store.
  
  <a href='https://play.google.com/store/apps/details?id=com.knoxtech.simplify&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="240" height="90"/></a>
+
+<a href="https://youtu.be/lt_Xe5WuneY" title="Preview">
+  <p align="left">
+    <img width="25%" src="https://github.com/shamsulhusainansari/Simplify-Event-Management-System/blob/main/Screenshots/button.png" alt="Preview"/>
+  </p>
+</a>
